@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace default_and_prameterize_constructor
+{
+    public class Program
+    {
+        int r;
+        string n;
+        Program(int rollno, string name)
+        {
+            r = rollno;
+            n = name;
+            Console.WriteLine(r + "\t" + n);
+        }
+        Program()
+        {
+            Console.WriteLine("Constructor called");
+        }
+         public static void Main(string[] args)
+        {
+            Program p = new Program();
+            Program p1 = new Program(85, "pranjal");
+        }
+    }
+}
